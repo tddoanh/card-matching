@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <style>
+
+        .card
+        {
+            width:300px;
+            height: 200px;
+            background-color: yellow;
+            box-sizing: border-box;
+        }
+        .deck
+        {
+            color:red!important;
+            border-radius: 10px;
+            border: 10px solid blue;
+        }
+    </style>
+    <script>
+        function changeDiv() {
+            //Selector
+            var a = $('#d1');
+
+            //Change HTML
+            //get
+            console.log(a.html());
+            //set
+            a.prev.html('new content');
+
+            //Change CSS
+            a.css({'color':'red','font-size':'50px'});
+
+            a.slideToggle(1000);
+
+            //Set value
+            $('#pass').val('').css('backgroundColor','green');
+
+        }
+        
+        $(function()
+        {
+            //Select by JQuery
+            $('#b1').click(changeDiv);
+        });
+
+    </script>
+</head>
+
+<body>
+    <input id="pass" type="password" placeholder="password field" value="234">
+
+    <div class="card" id="d2">This is a div 2
+        <h2>Heading in div 2</h2>
+    </div>
+    <div style="font-size:30px" class="card" id="d1">This is a div 1</div>
+    <button id="b1">Click me</button>
+</body>
+
+</html>
