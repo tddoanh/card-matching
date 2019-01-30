@@ -22,7 +22,7 @@ const numCard = 16;
                             win++;
                             if (win == numCard / 2) {
                                 clearInterval(timerID);
-                                setTimeout("alert('congratulation')", 1000);
+                                setTimeout("alert('Congratulations!')", 1000);
                             }
                         }
                         else//unmatched
