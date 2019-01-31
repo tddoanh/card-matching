@@ -63,9 +63,9 @@ const numCard = 16;
                     //Gan data cho card
                     cardList[pos].dataset.type=cardType[type];
                     cardProceed[pos] = 1;
-                    console.log(pos);
+                    //console.log(pos);
                 }
-                console.log(cardType[type]);
+                //console.log(cardType[type]);
             }
         })();
 
